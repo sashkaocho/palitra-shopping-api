@@ -4,7 +4,7 @@ import Cart from "../models/cart.model.js";
 export const getAllProducts = async (req, res) => {
   try {
     const products = await Product.find({});
-    res.json(products);
+    res.status(200).json(products);
   } catch (err) {
     console.log(err);
   }
