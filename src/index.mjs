@@ -26,6 +26,6 @@ mongoose
     });
     console.log("connected to a database");
   })
-  .catch(() => {
-    console.log("err");
+  .catch((err) => {
+    console.log(err);
   });

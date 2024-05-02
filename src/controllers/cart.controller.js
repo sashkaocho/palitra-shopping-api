@@ -18,7 +18,7 @@ export const getCart = async (req, res) => {
       };
     });
 
-    res.json(productsWithQuantities);
+    res.status(200).json(productsWithQuantities);
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Internal Server Error" });
